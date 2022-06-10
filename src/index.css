@@ -8,3 +8,9 @@
     @apply font-anuphan;
   }
 }
+
+.dashLine {
+  width: 100%;
+  border-bottom: 3px dashed #717171;
+  margin: 1% 0;
+}
