@@ -8,7 +8,7 @@ const playGsap = () => {
     mainLogoTl.from("#main-logo", {
         scale: 1.2,
         rotation: "45deg",
-        duration: 1,
+        duration: 2,
         ease: "expo.out",
     })
 
@@ -56,9 +56,37 @@ const playGsap = () => {
                 scrub: 2
             },
             opacity: 0,
-            yPercent:100
+            yPercent: 100
         })
     })
+
+    /* --------------- Choose camp --------------- */
+    const chooseCampTl = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#choose-camp-section",
+            markers: true,
+            start: '30% 100%',
+            end: '40% 65%',
+            scrub: 4,
+            ease:"power2"
+        }
+    })
+
+    chooseCampTl.from(".each-camp", {
+        yPercent:50,
+        opacity: 0,
+        rotation:15,
+        scale:0.9,
+        stagger:0.5,
+    }).from(".each-camp-button", {
+        opacity:0,
+        yPercent:50,
+        backgroundColor:"#FFFFFF",
+        stagger: 0.15
+    })
+
+
+
 }
 
 export default playGsap

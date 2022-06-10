@@ -28,7 +28,7 @@ const App = () => {
       </div>
       <div className="relative bg-gradient-to-b from-[#D9AAB1]  via-[#514B90] to-[#310C57] min-h-[110vh] sm:min-h-[140vh] overflow-hidden">
         <img src="/intro2-rock.png" alt="intro2-rock" className="w-full min-w-[40em] absolute left-1/2 -translate-x-1/2 top-0" />
-        <div className="my-24 md:mt-64">
+        <div id="choose-camp-section" className="my-24 md:mt-64">
           <ChooseCamp />
           <Schedule />
         </div>
