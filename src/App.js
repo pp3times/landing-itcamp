@@ -1,4 +1,4 @@
-import { Nav, Intro, Intro2, ChooseCamp, Schedule } from "./layouts"
+import { Nav, Intro, Intro2, ChooseCamp, Schedule, Place } from "./layouts"
 
 const App = () => {
   return (
@@ -23,6 +23,15 @@ const App = () => {
         <div className="my-24 md:mt-64">
           <ChooseCamp />
           <Schedule/>
+        </div>
+      </div>
+
+      <div className="relative bg-gradient-to-b from-[#310C57]  via-[#514B90] to-[#4c4787] min-h-[110vh] sm:min-h-[140vh] overflow-hidden">
+        <img src="/place/building.png" alt="building" className="w-full min-w-[40em] absolute left-1/2 -translate-x-1/2 bottom-0" />
+        <img src="/place/left.png" alt="building" className="absolute left-[-21em] bottom-[23em] w-[840px]" />
+        <img src="/place/right.png" alt="building" className="absolute right-[-21em] bottom-[5em] w-[840px]" />
+        <div className="absolute w-full h-full flex justify-center items-center">
+          <Place />
         </div>
       </div>
     </>
