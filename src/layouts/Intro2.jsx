@@ -11,7 +11,7 @@ const Intro2 = () => {
           className="w-24 md:w-44 object-contain"
         />
       </div>
-      <p className="text-center text-2xl font-medium text-white my-16 md:my-32 leading-10">
+      <p className="intro-2-header text-center text-2xl font-medium text-white my-16 md:my-32 leading-10">
         เมื่อโลกใบเดิมล่มสลาย
         <br />
         โลกใบใหม่ได้ถือกำเนิด
@@ -22,14 +22,14 @@ const Intro2 = () => {
       </p>
 
       <div className=" mx-12 md:mx-auto md:w-full max-w-[40em] h-[1px] bg-white/50" />
-      <h3 className="text-center text-2xl font-semibold text-white/80 mt-24">
+      <h3 className="intro-2-header text-center text-2xl font-semibold text-white/80 mt-24">
         เรื่องราวแห่ง ITCAMP ครั้งที่ 18
       </h3>
-      <h3 className="text-center text-3xl font-semibold text-white mt-3">
+      <h3 className="intro-2-header text-center text-3xl font-semibold text-white mt-3">
         ปฐมบทของโลกใบใหม่
       </h3>
-      <div className="relative flex px-12 py-14 bg-white/50 rounded-lg max-w-[40em] mx-12 md:mx-auto mt-12 z-10 shadow-xl">
-        <p className="indent-10 text-2xl font-semibold">
+      <div className="intro-2-header relative flex px-12 py-14 bg-white/50 rounded-lg max-w-[40em] mx-12 md:mx-auto mt-12 z-10 shadow-xl">
+        <p className="indent-10 text-lg md:text-2xl font-semibold">
           เมื่อโลกเกิดการล่มสลายด้วยภัยพิบัติทางธรรมชาติที่คาดไม่ถึง
           ทำให้มนุษย์ทั้งหลายต้อง รวมกลุ่มกันเพื่อเอาชีวิตรอด
           โดยมนุษย์ต่างก็ได้แยกย้ายกันและอพยพไปยังเขตพื้นที่ที่ยังคง
