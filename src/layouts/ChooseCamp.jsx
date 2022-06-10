@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
+import { Modal } from "../components";
 
 const ChooseCamp = () => {
+  const [toggleModal, setToggleModal] = useState(false);
+
+  const modalToggle = (e) => {
+    setToggleModal((prevToggle) => !prevToggle);
+  };
+
   return (
-    <div className="flex justify-center items-center flex-wrap flex-col md:flex-row space-x-4 space-y-10">
+    <div className="flex justify-center items-center flex-wrap flex-col md:flex-row space-x-4">
       {[
         {
           name: "Webtopia Town",
@@ -33,9 +40,8 @@ const ChooseCamp = () => {
           primaryColor: "#B0C2FF",
         },
       ].map(({ name, description, image, primaryColor }) => {
-        
         return (
-          <div className="flex flex-col items-center" key={name}>
+          <div className="each-camp flex flex-col items-center mt-12" key={name}>
             <img src={image} alt={name} className="w-[15em] md:w-[20em]" />
             <h3 className="text-center mt-4 text-3xl font-bold text-white">
               {name}
@@ -43,13 +49,44 @@ const ChooseCamp = () => {
             <p className="text-white/80 mt-2 text-lg text-center max-w-[15em] ">
               {description}
             </p>
-            {name === "Webtopia Town" && <button className="px-10 py-3 bg-[#F2C9CA] text-[#5A0A0A] font-semibold rounded-full mt-4 shadow">ดูรายละเอียด</button>}
-            {name === "Datavergent Town" && <button className="px-10 py-3 bg-[#EFDEB5] text-[#5A3F0A] font-semibold rounded-full mt-4 shadow">ดูรายละเอียด</button>}
-            {name === "Game Runner Town" && <button className="px-10 py-3 bg-[#DDEED9] text-[#246C2B] font-semibold rounded-full mt-4 shadow">ดูรายละเอียด</button>}
-            {name === "Nettapunk Town" && <button className="px-10 py-3 bg-[#B0C2FF] text-[#293B79] font-semibold rounded-full mt-4 shadow">ดูรายละเอียด</button>}
+            {name === "Webtopia Town" && (
+              <button
+                onClick={modalToggle}
+                className="each-camp-button px-10 py-3 bg-[#F2C9CA] text-[#5A0A0A] font-semibold rounded-full mt-4 shadow"
+              >
+                ดูรายละเอียด
+              </button>
+            )}
+            {name === "Datavergent Town" && (
+              <button
+                onClick={modalToggle}
+                className="each-camp-button px-10 py-3 bg-[#EFDEB5] text-[#5A3F0A] font-semibold rounded-full mt-4 shadow"
+              >
+                ดูรายละเอียด
+              </button>
+            )}
+            {name === "Game Runner Town" && (
+              <button
+                onClick={modalToggle}
+                className="each-camp-button px-10 py-3 bg-[#DDEED9] text-[#246C2B] font-semibold rounded-full mt-4 shadow"
+              >
+                ดูรายละเอียด
+              </button>
+            )}
+            {name === "Nettapunk Town" && (
+              <button
+                onClick={modalToggle}
+                className="each-camp-button px-10 py-3 bg-[#B0C2FF] text-[#293B79] font-semibold rounded-full mt-4 shadow"
+              >
+                ดูรายละเอียด
+              </button>
+            )}
           </div>
         );
       })}
+
+      {/* ส่วนของ Modal ให้พี่ภูมิแก้ */}
+      {toggleModal && <Modal setToggleModal={setToggleModal} />}
     </div>
   );
 };

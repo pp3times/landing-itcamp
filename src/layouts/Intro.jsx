@@ -7,20 +7,23 @@ const Intro = () => {
         <img
           src="/intro-logo.png"
           alt="intro-logo"
-          className="w-2/4 aspect-square min-w-[15em] max-w-[25em]"
+          className="w-2/4  min-w-[15em] max-w-[25em]"
+          id="main-logo"
         />
-        <h2 className="mt-20 text-3xl font-semibold text-white">ITCAMP 18</h2>
-        <h2 className="text-3xl text-center mt-1 font-semibold text-white">
+        <h2 className="intro-header mt-20 text-3xl font-semibold text-white">
+          ITCAMP 18
+        </h2>
+        <h2 className="intro-header text-3xl text-center mt-1 font-semibold text-white">
           A post-apocalyptic world
         </h2>
-        <p className="text-white/80 text-lg text-center mt-12">
+        <p className="intro-header text-white/80 text-lg text-center mt-12">
           14 - 17 กรกฎาคม 2565
           <br />
           คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง{" "}
           <br />
           สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง{" "}
         </p>
-        <button className="px-10 py-3 bg-transparent border-2 border-white text-2xl font-semibold text-white mt-10">
+        <button className="intro-header px-10 py-3 bg-transparent border-2 border-white text-2xl font-semibold text-white mt-10">
           สมัครเข้าค่าย
         </button>
       </div>

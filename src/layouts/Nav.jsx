@@ -1,8 +1,22 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const Nav = () => {
+  const [scrollHeight, setScrollHeight] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const position = window.pageYOffset;
+      setScrollHeight(position);
+    };
+    const event = window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", event);
+    };
+  }, [scrollHeight]);
+
   return (
-    <div className="fixed hidden md:flex top-6 left-0 right-0 justify-center space-x-12 text-white font-bold z-40">
+    <div className={`sticky ${scrollHeight > 100 ? "bg-slate-800/40 py-4" : "py-8"} hidden md:flex top-0 left-0 right-0 justify-center space-x-12 text-white font-bold z-40 transition-all duration-50`}>
       <a className=" hover:underline decoration-2 underline-offset-4" href="/a">
         ปฐมบท
       </a>
