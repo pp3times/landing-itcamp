@@ -1,5 +1,5 @@
 import React, { useEffect } from "react"
-import { Nav, Intro, Intro2, ChooseCamp, Schedule, Place } from "./layouts"
+import { Nav, Intro, Intro2, ChooseCamp, Schedule, Place, SwiperSection } from "./layouts"
 import gsapPlayer from "./functions/gsapPlayer"
 
 const App = () => {
@@ -41,6 +41,48 @@ const App = () => {
         <div className="absolute w-full h-full flex justify-center items-center">
           <Place />
         </div>
+      </div>
+
+      <div className="relative bg-gradient-to-b from-[#4D4889] to-[#330A5D] py-12 min-h-screen md:min-h-[150vh]">
+        {/* Background */}
+        <img src="question-bg.png" alt="question-bg" className="absolute bottom-0 w-full left-1/2 transform -translate-x-1/2 opacity-70" />
+        <div className="relative z-10 ">
+          <h3 className="text-3xl font-semibold text-white text-center">ภาพกิจกรรม IT CAMP ที่เคยจัด</h3>
+          <SwiperSection />
+          <h3 className="text-3xl font-semibold text-white text-center mt-12">คำถามที่พบบ่อย</h3>
+          <div className="flex flex-col space-y-6 divide-y-2 divide-white/50 mt-12 bg-[#141523]/80 mx-24 md:mx-44 p-12">
+
+            {[
+              {
+                question: "พรุ่งนี้วันอะไร",
+                answer: "วันอังคาร"
+              },
+              {
+                question: "พรุ่งนี้วันอะไร",
+                answer: "วันอังคาร"
+              },
+              {
+                question: "พรุ่งนี้วันอะไร",
+                answer: "วันอังคาร"
+              },
+            ].map((question, i) => (
+              <div key={i} className="pt-6">
+                <p className="text-lg text-white font-medium text-center">Q: {question.question}</p>
+                <p className="text-lg text-white font-medium text-center">A: {question.answer}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      <div className="w-full px-12 py-24 bg-[#180020] flex flex-col">
+        <h2 className="text-lg text-white text-center font-medium">Follow Us</h2>
+        <div className="flex justify-center space-x-12 mt-12">
+          <img src="/facebook.png" alt="facebook" className="w-12" />
+          <img src="/twitter.png" alt="twitter" className="w-12" />
+          <img src="/ig.png" alt="ig" className="w-12" />
+          <img src="/tiktok.png" alt="tiktok" className="w-12" />
+        </div>
+        <h2 className="text-lg text-white text-center font-medium mt-12">ที่อยู่คณะ</h2>
       </div>
 
     </div>

@@ -64,7 +64,7 @@ const playGsap = () => {
     const chooseCampTl = gsap.timeline({
         scrollTrigger: {
             trigger: "#choose-camp-section",
-            markers: true,
+            markers: false,
             start: '30% 100%',
             end: '40% 65%',
             scrub: 4,

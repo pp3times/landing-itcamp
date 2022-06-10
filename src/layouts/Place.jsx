@@ -61,7 +61,7 @@ const Place = () => {
   };
   return (
     <div className="bg-[#ffffff7c] w-full lg:m-32 md:m-24 sm:m-4 h-[90%] lg:h-[60%] rounded-3xl p-11 lg:p-14">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 h-[49%] grid-rows-3">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 h-[49%] grid-rows-3">
         <div className="flex lg:justify-center items-center justify-start lg:row-span-3">
           <div className="lg:p-10">
             <h1 className="text-3xl font-medium relative h-11">
@@ -81,13 +81,13 @@ const Place = () => {
             height="100%"
             allowfullscreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
+            referrerPolicy="no-referrer-when-downgrade"
             className="rounded-xl"
           />
         </div>
       </div>
       <div className="dashLine"></div>
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 h-[49%] grid-rows-3">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 h-[49%] grid-rows-3">
         <div className="flex justify-center items-center lg:h-auto lg:row-span-3 ">
           <div className="w-[150px] hidden lg:block">
             <h1 className="text-3xl font-medium relative h-11">
