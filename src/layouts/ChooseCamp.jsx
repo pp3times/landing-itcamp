@@ -9,7 +9,7 @@ const ChooseCamp = () => {
   };
 
   return (
-    <div className="flex justify-center items-center flex-wrap flex-col md:flex-row space-x-4">
+    <div id="subcamp" className="flex justify-center items-center flex-wrap flex-col md:flex-row space-x-4">
       {[
         {
           name: "Webtopia Town",
