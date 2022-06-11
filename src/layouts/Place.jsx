@@ -60,7 +60,7 @@ const Place = () => {
     return "flex justify-center items-center cursor-pointer decoration-black no-underline hover:underline";
   };
   return (
-    <div className="bg-[#ffffff7c] w-full lg:m-32 md:m-24 sm:m-4 h-[90%] lg:h-[60%] rounded-3xl p-11 lg:p-14">
+    <div id="place" className="bg-[#ffffff7c] w-full lg:m-32 md:m-24 sm:m-4 h-[90%] lg:h-[60%] rounded-3xl p-11 lg:p-14">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 h-[49%] grid-rows-3">
         <div className="flex lg:justify-center items-center justify-start lg:row-span-3">
           <div className="lg:p-10">

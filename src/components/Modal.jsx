@@ -553,9 +553,10 @@ const Modal = ({ setToggleModal, selectedCamp }) => {
 
   return ReactDOM.createPortal(
     <>
-      <div className="fixed z-[42] top-2 left-2 right-2 bottom-2 bg-white rounded-lg p-4">
-        <FiXCircle onClick={closeModal} className="text-3xl ml-auto" />
-        <p>asd</p>
+
+      <div className="fixed z-[42] top-12 left-24 right-24 bottom-12 bg-white rounded-lg p-4">
+        <p>Loading..</p>
+
       </div>
       <div
         onClick={closeModal}

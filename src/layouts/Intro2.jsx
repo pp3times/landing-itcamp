@@ -3,7 +3,7 @@ import React from "react";
 const Intro2 = () => {
   return (
     <>
-      <div className="pt-44 flex justify-center space-x-10">
+      <div id="intro" className="pt-44 flex justify-center space-x-10">
         <img src="it-logo.png" alt="it-logo" className="w-24 md:w-44" />
         <img
           src="kmitl-logo.png"
