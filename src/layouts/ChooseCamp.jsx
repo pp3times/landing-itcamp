@@ -1,12 +1,15 @@
-import React, { useState } from "react";
+import React, { useState , useEffect } from "react";
 import { Modal } from "../components";
 
 const ChooseCamp = () => {
   const [toggleModal, setToggleModal] = useState(false);
+  const [selectedCamp , setSelectedCamp] = useState("")
 
-  const modalToggle = (e) => {
+  const modalToggle = (chosenCamp) => {
     setToggleModal((prevToggle) => !prevToggle);
+    setSelectedCamp(chosenCamp)
   };
+
 
   return (
     <div id="subcamp" className="flex justify-center items-center flex-wrap flex-col md:flex-row space-x-4">
@@ -51,7 +54,7 @@ const ChooseCamp = () => {
             </p>
             {name === "Webtopia Town" && (
               <button
-                onClick={modalToggle}
+                onClick={()=> modalToggle(name)}
                 className="each-camp-button px-10 py-3 bg-[#F2C9CA] text-[#5A0A0A] font-semibold rounded-full mt-4 shadow"
               >
                 ดูรายละเอียด
@@ -59,7 +62,7 @@ const ChooseCamp = () => {
             )}
             {name === "Datavergent Town" && (
               <button
-                onClick={modalToggle}
+                onClick={()=> modalToggle(name)}
                 className="each-camp-button px-10 py-3 bg-[#EFDEB5] text-[#5A3F0A] font-semibold rounded-full mt-4 shadow"
               >
                 ดูรายละเอียด
@@ -67,7 +70,7 @@ const ChooseCamp = () => {
             )}
             {name === "Game Runner Town" && (
               <button
-                onClick={modalToggle}
+                onClick={()=> modalToggle(name)}
                 className="each-camp-button px-10 py-3 bg-[#DDEED9] text-[#246C2B] font-semibold rounded-full mt-4 shadow"
               >
                 ดูรายละเอียด
@@ -75,7 +78,7 @@ const ChooseCamp = () => {
             )}
             {name === "Nettapunk Town" && (
               <button
-                onClick={modalToggle}
+                onClick={()=> modalToggle(name)}
                 className="each-camp-button px-10 py-3 bg-[#B0C2FF] text-[#293B79] font-semibold rounded-full mt-4 shadow"
               >
                 ดูรายละเอียด
@@ -86,7 +89,7 @@ const ChooseCamp = () => {
       })}
 
       {/* ส่วนของ Modal ให้พี่ภูมิแก้ */}
-      {toggleModal && <Modal setToggleModal={setToggleModal} />}
+      {toggleModal && <Modal setToggleModal={setToggleModal} selectedCamp={selectedCamp} />}
     </div>
   );
 };
