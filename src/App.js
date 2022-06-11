@@ -99,7 +99,7 @@ const App = () => {
           <h3 className="text-3xl font-semibold text-white text-center mt-12">
             คำถามที่พบบ่อย
           </h3>
-          <div className="flex flex-col space-y-6 divide-y-2 divide-white/50 mt-12 bg-[#141523]/80 mx-24 md:mx-44 p-12">
+          <div className="flex flex-col space-y-6 divide-y-2 divide-white/50 mt-12 bg-[#141523]/80 sm:mx-24 md:mx-44 p-12">
             {[
               {
                 question: "ค่าย ITCAMP ครั้งที่ 18 คืออะไร",
@@ -130,10 +130,10 @@ const App = () => {
               },
             ].map((question, i) => (
               <div key={i} className="pt-6">
-                <p className="text-lg text-white font-medium text-center">
+                <p className="text-lg text-white font-semibold">
                   Q: {question.question}
                 </p>
-                <p className="text-lg text-white font-medium text-center">
+                <p className="text-white/80 mt-1">
                   A: {question.answer}
                 </p>
               </div>

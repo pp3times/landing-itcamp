@@ -51,8 +51,8 @@ const playGsap = () => {
             scrollTrigger: {
                 trigger: text,
                 markers: false,
-                start: "top 90%",
-                end: "top 70%",
+                start: "top bottom",
+                end: "top bottom",
                 scrub: 2
             },
             opacity: 0,

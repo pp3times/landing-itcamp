@@ -19,8 +19,7 @@ const Intro = () => {
         <p className="intro-header text-white/80 text-lg text-center mt-12">
           14 - 17 กรกฎาคม 2565
           <br />
-          คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง{" "}
-          <br />
+          คณะเทคโนโลยีสารสนเทศ <br />
           สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง{" "}
         </p>
         <button className="intro-header px-10 py-3 bg-transparent border-2 border-white text-2xl font-semibold text-white mt-10">
