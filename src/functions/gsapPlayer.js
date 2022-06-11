@@ -65,23 +65,23 @@ const playGsap = () => {
         scrollTrigger: {
             trigger: "#choose-camp-section",
             markers: false,
-            start: '30% 100%',
-            end: '40% 65%',
+            start: 'top 100%',
+            end: '10% 65%',
             scrub: 4,
-            ease:"power2"
+            ease: "power2"
         }
     })
 
     chooseCampTl.from(".each-camp", {
-        yPercent:50,
+        yPercent: 50,
         opacity: 0,
-        rotation:15,
-        scale:0.9,
-        stagger:0.5,
+        rotation: 15,
+        scale: 0.9,
+        stagger: 0.5,
     }).from(".each-camp-button", {
-        opacity:0,
-        yPercent:50,
-        backgroundColor:"#FFFFFF",
+        opacity: 0,
+        yPercent: 50,
+        backgroundColor: "#FFFFFF",
         stagger: 0.15
     })
 

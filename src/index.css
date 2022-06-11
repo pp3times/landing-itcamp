@@ -14,3 +14,13 @@
   border-bottom: 3px dashed #717171;
   margin: 1% 0;
 }
+
+.no-scroll::-webkit-scrollbar {
+  width:0.8em;
+  background-color:rgba(54, 54, 54, 0.466);
+}
+
+.no-scroll::-webkit-scrollbar-thumb {
+  width:0.8em;
+  background-color:rgb(44, 33, 33);
+}
