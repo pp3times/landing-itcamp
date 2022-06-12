@@ -25,3 +25,7 @@
   width:0.8em;
   background-color:rgb(44, 33, 33);
 }
+
+img{
+  @apply pointer-events-none;
+}

@@ -15,7 +15,7 @@ const playGsap = () => {
     const introBuildingTl = gsap.timeline({
         scrollTrigger: {
             trigger: "#intro-section",
-            markers: false,
+            markers: true,
             start: "80% 60%",
             end: "bottom 30%",
             scrub: 2
@@ -25,7 +25,10 @@ const playGsap = () => {
     introBuildingTl.to("#intro-building", {
         yPercent: 100,
         duration: 2
-    })
+    }).to("#top-rock", {
+        yPercent: -10,
+        opacity: 0,
+    },"<")
 
     gsap.to(".intro-header", {
         scrollTrigger: {

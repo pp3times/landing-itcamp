@@ -47,6 +47,7 @@ const App = () => {
         <img
           src="/rock.png"
           alt="rock"
+          id="top-rock"
           className="w-full max-h-[20em] absolute top-0 left-0"
         />
         <Intro2 />
@@ -79,7 +80,7 @@ const App = () => {
           alt="building"
           className="absolute right-[-21em] bottom-[5em] w-[840px]"
         />
-        <div className="absolute w-full h-full flex justify-center items-center">
+        <div className="relative z-10 flex justify-center items-center">
           <Place />
         </div>
       </div>
@@ -96,10 +97,10 @@ const App = () => {
             ภาพกิจกรรม IT CAMP ที่เคยจัด
           </h3>
           <SwiperSection />
-          <h3 className="text-3xl font-semibold text-white text-center mt-12">
+          <div className="flex flex-col space-y-6 divide-y-2 divide-white/50 mt-12 bg-[#141523]/80 sm:mx-24 md:mx-44 p-12">
+          <h3 className="text-3xl font-semibold text-white text-center mb-12">
             คำถามที่พบบ่อย
           </h3>
-          <div className="flex flex-col space-y-6 divide-y-2 divide-white/50 mt-12 bg-[#141523]/80 sm:mx-24 md:mx-44 p-12">
             {[
               {
                 question: "ค่าย ITCAMP ครั้งที่ 18 คืออะไร",

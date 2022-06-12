@@ -60,20 +60,22 @@ const Place = () => {
     return "flex justify-center items-center cursor-pointer decoration-black no-underline hover:underline";
   };
   return (
-    <div id="place" className="bg-[#ffffff7c] w-full lg:m-32 md:m-24 sm:m-4 h-[90%] lg:h-[60%] rounded-3xl p-11 lg:p-14">
+    <div
+      id="place"
+      className="bg-[#ffffff7c] w-full lg:m-32 md:m-24 m-4 rounded-2xl p-11 lg:p-14"
+    >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 h-[49%] grid-rows-3">
-        <div className="flex lg:justify-center items-center justify-start lg:row-span-3">
-          <div className="lg:p-10">
-            <h1 className="text-3xl font-medium relative h-11">
-              <div className="w-[80px] h-[80px] bg-[#7BB5D3] rounded-full absolute opacity-80 top-[-70%] left-[-40px] z-0"></div>
-              <div className="absolute z-1">สถานที่จัดค่าย</div>
-            </h1>
-            <div className="text-md font-medium mx-2">
-              คณะเทคโนโลยีสารสนเทศ <br />
-              สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง
-            </div>
+        <div className="">
+          <h1 className="">
+            <div className="w-[80px] h-[80px] bg-[#7BB5D3] rounded-full absolute opacity-80 top-[-70%] left-[-40px] z-0"></div>
+            <div className="text-2xl font-semibold text-center lg:text-left">สถานที่จัดค่าย</div>
+          </h1>
+          <div className="text-md font-medium text-lg text-black/80 text-center lg:text-left">
+            คณะเทคโนโลยีสารสนเทศ <br />
+            สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง
           </div>
         </div>
+
         <div className="row-span-3">
           <Iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3875.8362522768525!2d100.77892338003905!3d13.728361716150033!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d66308ce98ffd%3A0xcb43a76f038c38ca!2sKMITL%20Faculty%20of%20IT!5e0!3m2!1sen!2sth!4v1654858750838!5m2!1sen!2sth"
@@ -89,19 +91,17 @@ const Place = () => {
       <div className="dashLine"></div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 h-[49%] grid-rows-3">
         <div className="flex justify-center items-center lg:h-auto lg:row-span-3 ">
-          <div className="w-[150px] hidden lg:block">
-            <h1 className="text-3xl font-medium relative h-11">
+          <div className="">
+            <h1 className="">
               <div className="w-[80px] h-[80px] bg-[#7BB5D3] rounded-full absolute opacity-80 top-[-70%] left-[-40px] z-0"></div>
-              <div className="absolute z-1">การเดินทาง</div>
-              <div className="absolute right-0 top-10 text-xl">
-                สู่เมืองใหญ่
+              <div className="z-1 text-2xl font-semibold">
+                การเดินทางสู่เมืองใหญ่
               </div>
             </h1>
           </div>
-          <div className="text-3xl font-medium block lg:hidden">การเดินทางสู่เมืองใหญ่</div>
         </div>
-        <div className=" col-span-2 row-span-3">
-          <div className="w-full h-14 rounded-full flex justify-around items-center border-2 border-black font-medium">
+        <div className="col-span-2 row-span-3">
+          <div className="w-full rounded-lg py-2 flex justify-around items-center border-2 border-black font-medium">
             <div
               className={tabClass("airportTab")}
               onClick={() => {
@@ -158,7 +158,7 @@ const Place = () => {
               รถไฟ
             </div>
           </div>
-          <div className="w-full h-[80%] rounded-3xl border-2 border-black text-black font-medium mt-3 relative overflow-auto">
+          <div className="w-full h-[80%] rounded-lg border-2 border-black text-black font-medium mt-3 relative overflow-auto">
             {showingTabs.compo}
           </div>
         </div>
