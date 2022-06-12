@@ -15,7 +15,7 @@ const playGsap = () => {
     const introBuildingTl = gsap.timeline({
         scrollTrigger: {
             trigger: "#intro-section",
-            markers: true,
+            markers: false,
             start: "80% 60%",
             end: "bottom 30%",
             scrub: 2

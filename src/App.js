@@ -14,7 +14,13 @@ const App = () => {
   //Use animation
   useEffect(() => {
     gsapPlayer();
+    if (process.env.NODE_ENV !== "development") {
+      console.log = function () { }
+    }
   }, []);
+
+
+
 
   return (
     <div className="bg-[#1D1D2F]">
@@ -98,9 +104,9 @@ const App = () => {
           </h3>
           <SwiperSection />
           <div className="flex flex-col space-y-6 divide-y-2 divide-white/50 mt-12 bg-[#141523]/80 sm:mx-24 md:mx-44 p-12">
-          <h3 className="text-3xl font-semibold text-white text-center mb-12">
-            คำถามที่พบบ่อย
-          </h3>
+            <h3 className="text-3xl font-semibold text-white text-center mb-12">
+              คำถามที่พบบ่อย
+            </h3>
             {[
               {
                 question: "ค่าย ITCAMP ครั้งที่ 18 คืออะไร",
