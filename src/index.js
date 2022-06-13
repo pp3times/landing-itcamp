@@ -1,17 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import TOS from './TOS';
-import PrivacyPolicy from './PrivacyPolicy';
-import Cookie from './Cookie';
-import {
-    BrowserRouter,
-    Routes,
-    Route,
-} from "react-router-dom";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import TOS from "./TOS";
+import PrivacyPolicy from "./PrivacyPolicy";
+import Cookie from "./Cookie";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Routes>
@@ -20,7 +16,7 @@ root.render(
         path="*"
         element={
           <div className="text-2xl font-bold absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-            Page not found
+            Page not found :(
           </div>
         }
       />

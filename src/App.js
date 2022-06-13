@@ -90,7 +90,7 @@ const App = () => {
       </div>
 
       <div
-        id="FAQ"
+        id="mood"
         className="relative bg-gradient-to-b from-[#4D4889] to-[#330A5D] py-12 min-h-screen md:min-h-[150vh]"
       >
         {/* Background */}
@@ -104,7 +104,10 @@ const App = () => {
             ภาพกิจกรรม IT CAMP ที่เคยจัด
           </h3>
           <SwiperSection />
-          <div className="flex flex-col space-y-6 divide-y-2 divide-white/50 mt-12 bg-[#141523]/80 sm:mx-24 md:mx-44 p-12">
+          <div
+            id="FAQ"
+            className="flex flex-col space-y-6 divide-y-2 divide-white/50 mt-12 bg-[#141523]/80 sm:mx-24 md:mx-44 p-12"
+          >
             <h3 className="text-3xl font-semibold text-white text-center mb-12">
               คำถามที่พบบ่อย
             </h3>

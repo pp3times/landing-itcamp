@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 
 const SwiperSection = () => {
   return (
-    <div id="mood" className="mx-12 mt-12">
+    <div className="mx-12 mt-12">
       <Swiper
         className=""
         spaceBetween={10}
@@ -48,7 +48,7 @@ const SwiperSection = () => {
             className="w-full h-full block"
           />
         </SwiperSlide>
-        <SwiperSlide className="w-full  bg-red-100/50 rounded-lg p-1.5">
+        {/* <SwiperSlide className="w-full  bg-red-100/50 rounded-lg p-1.5">
           <img
             src="feeling/_MG_9426.jpg"
             alt="ITCamp_img3"
@@ -61,7 +61,7 @@ const SwiperSection = () => {
             alt="ITCamp_img4"
             className="w-full h-full block"
           />
-        </SwiperSlide>
+        </SwiperSlide> */}
         <SwiperSlide className="w-full  bg-red-100/50 rounded-lg p-1.5">
           <img
             src="feeling/IMG_6598.jpg"
