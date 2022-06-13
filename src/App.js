@@ -89,7 +89,10 @@ const App = () => {
         </div>
       </div>
 
-      <div id="FAQ" className="relative bg-gradient-to-b from-[#4D4889] to-[#330A5D] py-12 min-h-screen md:min-h-[150vh]">
+      <div
+        id="FAQ"
+        className="relative bg-gradient-to-b from-[#4D4889] to-[#330A5D] py-12 min-h-screen md:min-h-[150vh]"
+      >
         {/* Background */}
         <img
           src="question-bg.png"
@@ -138,9 +141,7 @@ const App = () => {
                 <p className="text-lg text-white font-semibold">
                   Q: {question.question}
                 </p>
-                <p className="text-white/80 mt-1">
-                  A: {question.answer}
-                </p>
+                <p className="text-white/80 mt-1">A: {question.answer}</p>
               </div>
             ))}
           </div>
@@ -186,8 +187,15 @@ const App = () => {
           <p>ติดต่อ +66 (0) 2723 4900 หรือ +66 (0) 2723 4910</p>
         </h2>
         <div className="flex justify-center space-x-4">
-          <Link to="/tos" className="text-white underline text-center">Term of service</Link>
-          <Link to="/privacy" className="text-white underline text-center">Privacy policy</Link>
+          <Link to="/tos" className="text-white underline text-center">
+            Term of service
+          </Link>
+          <Link to="/privacy" className="text-white underline text-center">
+            Privacy policy
+          </Link>
+          <Link to="/cookie" className="text-white underline text-center">
+            Cookie policy
+          </Link>
         </div>
       </div>
     </div>
