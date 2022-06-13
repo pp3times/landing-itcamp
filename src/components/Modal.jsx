@@ -18,7 +18,7 @@ const Modal = ({ setToggleModal, selectedCamp }) => {
             <div className="fixed z-[44] top-12 left-12 lg:left-32 right-12 lg:right-32 bottom-12 bg-white rounded-lg p-4 overflow-y-scroll no-scroll">
               <FiXCircle
                 onClick={() => setToggleTOS(false)}
-                className="text-gray-800 text-3xl ml-auto"
+                className="text-gray-800 text-3xl ml-auto cursor-pointer"
               />
               <div className="mx-2 md:mx-12 my-4">
                 <h3 className="text-center text-lg font-bold text-gray-800">
@@ -103,10 +103,10 @@ const Modal = ({ setToggleModal, selectedCamp }) => {
           </>
         )}
 
-        <div className="fixed z-[42] top-2 left-2 right-2 bottom-2 bg-[url('web.png')] rounded-lg p-4 overflow-y-scroll no-scroll">
+        <div className="fixed z-[42] top-2 left-2 right-2 bottom-2 bg-[url('web.png')] bg-no-repeat bg-cover rounded-lg p-4 overflow-y-scroll no-scroll">
           <FiXCircle
             onClick={closeModal}
-            className="text-white text-3xl ml-auto"
+            className="text-white text-3xl ml-auto cursor-pointer"
           />
           <div className="flex justify-center items-center flex-col lg:flex-row space-y-12 lg:space-y-0 lg:space-x-12 p-2 md:p-12 max-w-[100em] mx-auto mt-24">
             <img src="/camp-logo-1.png" alt="Webtopia Town" />
@@ -130,13 +130,60 @@ const Modal = ({ setToggleModal, selectedCamp }) => {
                 จงมาเข้าร่วมกับเมืองของเราเพื่อสร้างโลกแห่งอนาคต
                 ในอุดมคติไปด้วยกัน !
               </p>
-              <button
-                onClick={() => setToggleTOS(!toggleTOS)}
-                className="px-8 py-2 bg-red-200 text-lg font-medium rounded-full ml-auto block mt-4"
-              >
-                สมัครค่าย Webtopia
-              </button>
             </div>
+          </div>
+          <div className="mt-12 flex flex-col items-center px-8">
+            <div className="w-full h-[1px] bg-gray-200/50 rounded-full" />
+            <h3 className="text-white font-semibold text-3xl mt-12 underline decoration-4 underline-offset-8">
+              คำถามประจำค่าย
+            </h3>
+            <ul className="text-white mt-12 flex flex-col space-y-12 max-w-[60em] list-decimal divide-y divide-gray-200/40">
+              <li className="pt-4 px-4">
+                UX / UI มีความแตกต่างกันอย่างไร ยกตัวอย่างของ UX ที่ดีและ UI
+                ที่ดีของ Website มาอย่างละ 2 ข้อ
+              </li>
+              <li className="pt-4 px-4">
+                ถ้าหากให้พัฒนาเว็บไซต์ขึ้นมา 1
+                เว็บไซต์ที่เกี่ยวกับนโยบายของผู้ว่ากทม ฯ คนปัจจุบัน
+                จะพัฒนาเว็บไซต์ที่จะสามารถสนับสนุนการใช้งานหรือติดตามนโยบายนั้น
+                ๆ ได้เพราะเหตุใด จะใช้เทคโนโลยีใดบ้าง และมีประโยชน์อย่างไร
+                (เลือกเพียง 1 นโยบาย
+                โดยสามารถเป็นเว็บไซต์สำหรับคนทั่วไปหรือสำหรับทีมงานก็ได้)
+              </li>
+              <li className="pt-4 px-4">
+                <p>
+                  จงเขียน flowchart การทำงานของ code นี้
+                  รวมถึงผลลัพธ์ที่จะแสดงออกมา โดยสามารถเขียนลงใน lucidchart
+                  และแนบ URL มาได้
+                </p>
+                <img
+                  src="/camp-question/web-1.png"
+                  alt="web-1"
+                  className="w-full max-w-[30em] mt-4 rounded"
+                />
+              </li>
+              <li className="pt-4 px-4">
+                จงเขียน function getSum ที่จะรับ array [“h3llo”, “w0rld”,
+                “th1s”, “is”, “w3bt0pi4”] เข้ามาและ return
+                ผลรวมของเลขโดดทั้งหมดที่แทรกอยู่ภายในคำแต่ละคำ เช่น “m0rn1n9”
+                จะต้องเป็น 0+1+9
+              </li>
+              <li className="pt-4 px-4">
+                ให้น้อง ๆ เขียนเว็บไซต์เพื่อแนะนำตัว โดยจะมีเนื้อหาอย่างไรก็ได้
+                แต่ต้องมี HTML, CSS และ JavaScript ในไฟล์ .html
+                ไฟล์เดียวเท่านั้น โดยมีการใช้ JavaScript ในการกระทำกับ DOM
+                อย่างน้อย 2 อย่าง เช่นการ compute, element toggle
+                และส่งโดยการอัปโหลดไฟล์บน google drive หรือ github แล้วแนบเป็น
+                URL มา
+              </li>
+            </ul>
+            <div className="w-full h-[1px] bg-gray-200/50 rounded-full mt-12" />
+            <button
+              onClick={() => setToggleTOS(!toggleTOS)}
+              className="px-8 py-2 bg-red-200 text-lg font-medium rounded-full my-12"
+            >
+              สมัครค่าย Webtopia
+            </button>
           </div>
         </div>
         <div
@@ -156,7 +203,7 @@ const Modal = ({ setToggleModal, selectedCamp }) => {
             <div className="fixed z-[44] top-12 left-12 lg:left-32 right-12 lg:right-32 bottom-12 bg-white rounded-lg p-4 overflow-y-scroll no-scroll">
               <FiXCircle
                 onClick={() => setToggleTOS(false)}
-                className="text-gray-800 text-3xl ml-auto"
+                className="text-gray-800 text-3xl ml-auto cursor-pointer"
               />
               <div className="mx-2 md:mx-12 my-4">
                 <h3 className="text-center text-lg font-bold text-gray-800">
@@ -241,10 +288,10 @@ const Modal = ({ setToggleModal, selectedCamp }) => {
           </>
         )}
 
-        <div className="fixed z-[42] top-2 left-2 right-2 bottom-2 bg-[url('data.png')] rounded-lg p-4 overflow-y-scroll no-scroll">
+        <div className="fixed z-[42] top-2 left-2 right-2 bottom-2 bg-[url('data.png')] bg-no-repeat bg-cover rounded-lg p-4 overflow-y-scroll no-scroll">
           <FiXCircle
             onClick={closeModal}
-            className="text-white text-3xl ml-auto"
+            className="text-white text-3xl ml-auto cursor-pointer"
           />
           <div className="flex justify-center items-center flex-col lg:flex-row space-y-12 lg:space-y-0 lg:space-x-12 p-2 md:p-12 max-w-[100em] mx-auto mt-24">
             <img src="/camp-logo-2.png" alt="Webtopia Town" />
@@ -267,13 +314,48 @@ const Modal = ({ setToggleModal, selectedCamp }) => {
                 ไม่มีปัญหากับเหล่าตัวเลขและต้องการให้โลกอันไร้ระเบียบนี้เปลี่ยนไปด้วยพลังแห่งการวิเคราะห์ข้อมูลของ
                 ท่าน เมืองแห่งนี้รอรับเหล่าผู้แตกต่างอยู่เสมอ!
               </p>
-              <button
-                onClick={() => setToggleTOS(!toggleTOS)}
-                className="px-8 py-2 bg-[#E7D3A3] text-lg font-medium rounded-full ml-auto block mt-4"
-              >
-                สมัครค่าย DATAVERGENT
-              </button>
             </div>
+          </div>
+          <div className="mt-12 flex flex-col items-center px-8">
+            <div className="w-full h-[1px] bg-gray-200/50 rounded-full" />
+            <h3 className="text-white font-semibold text-3xl mt-12 underline decoration-4 underline-offset-8">
+              คำถามประจำค่าย
+            </h3>
+            <ul className="text-white mt-12 flex flex-col space-y-12 max-w-[60em] list-decimal divide-y divide-gray-200/40">
+              <li className="pt-4 px-4">
+                อยากให้น้องลอง ยกตัวอย่างการประยุกต์ใช้ Data Science
+                ในชีวิตจริงมาสัก 1 อย่าง ที่น้องคิดว่าอันนี้เเหละคือการทำ Data
+                Science เเละลองอธิบายสิ่งนี้มาคร่าว ๆ
+              </li>
+              <li className="pt-4 px-4">
+                น้องคิดเห็นอย่างไรกับคำเปรียบที่ว่า “Data is the new oil” หรือ
+                “ข้อมูลเปรียบเสมือนน้ำมันที่มีมูลค่ามหาศาล”
+              </li>
+              <li className="pt-4 px-4">
+                จงอธิบาย Supervised Learning กับ Unsupervised Learning
+                ตามความเข้าใจ
+              </li>
+              <li className="pt-4 px-4">
+                น้อง ๆ มีความคิดอย่างไรกับ กับประโยคที่ว่า “เรียนคณิตไปทำไม
+                เรียนไปก็ไม่ได้ใช้ขนาดนั้น”
+              </li>
+              <li className="pt-4 px-4">
+                จากข้อมูลต่อไปนี้ น้องเห็นอะไรจากข้อมูลนี้บ้าง
+                ลองอธิบายให้พี่ฟังหน่อย
+                <img
+                  src="/camp-question/data-1.png"
+                  alt="data-1"
+                  className="w-full max-w-[30em] mt-4 rounded"
+                />
+              </li>
+            </ul>
+            <div className="w-full h-[1px] bg-gray-200/50 rounded-full mt-12" />
+            <button
+              onClick={() => setToggleTOS(!toggleTOS)}
+              className="px-8 py-2 bg-[#E7D3A3] text-lg font-medium rounded-full my-12"
+            >
+              สมัครค่าย DATAVERGENT
+            </button>
           </div>
         </div>
         <div
@@ -293,7 +375,7 @@ const Modal = ({ setToggleModal, selectedCamp }) => {
             <div className="fixed z-[44] top-12 left-12 lg:left-32 right-12 lg:right-32 bottom-12 bg-white rounded-lg p-4 overflow-y-scroll no-scroll">
               <FiXCircle
                 onClick={() => setToggleTOS(false)}
-                className="text-gray-800 text-3xl ml-auto"
+                className="text-gray-800 text-3xl ml-auto cursor-pointer"
               />
               <div className="mx-2 md:mx-12 my-4">
                 <h3 className="text-center text-lg font-bold text-gray-800">
@@ -378,10 +460,10 @@ const Modal = ({ setToggleModal, selectedCamp }) => {
           </>
         )}
 
-        <div className="fixed z-[42] top-2 left-2 right-2 bottom-2 bg-[url('game.png')] rounded-lg p-4 overflow-y-scroll no-scroll">
+        <div className="fixed z-[42] top-2 left-2 right-2 bottom-2 bg-[url('game.png')] bg-no-repeat bg-cover rounded-lg p-4 overflow-y-scroll no-scroll">
           <FiXCircle
             onClick={closeModal}
-            className="text-white text-3xl ml-auto"
+            className="text-white text-3xl ml-auto cursor-pointer"
           />
           <div className="flex justify-center items-center flex-col lg:flex-row space-y-12 lg:space-y-0 lg:space-x-12 p-2 md:p-12 max-w-[100em] mx-auto mt-24">
             <img src="/camp-logo-3.png" alt="Webtopia Town" />
@@ -402,13 +484,40 @@ const Modal = ({ setToggleModal, selectedCamp }) => {
                 และต้องการที่จะสร้างโลกในความฝันนี้ไปด้วยกัน
                 เมืองแห่งนี้จะรอจับมือและออกวิ่งไปพร้อมกับ ทุกท่านเอง!
               </p>
-              <button
-                onClick={() => setToggleTOS(!toggleTOS)}
-                className="px-8 py-2 bg-[#DDEED9] text-lg font-medium rounded-full ml-auto block mt-4"
-              >
-                สมัครค่าย GAME RUNNER
-              </button>
             </div>
+          </div>
+          <div className="mt-12 flex flex-col items-center px-8">
+            <div className="w-full h-[1px] bg-gray-200/50 rounded-full" />
+            <h3 className="text-white font-semibold text-3xl mt-12 underline decoration-4 underline-offset-8">
+              คำถามประจำค่าย
+            </h3>
+            <ul className="text-white mt-12 flex flex-col space-y-12 max-w-[60em] list-decimal divide-y divide-gray-200/40">
+              <li className="pt-4 px-4">
+                ถ้าน้องได้มีโอกาสทำงานในอุตสาหกรรมเกม น้องจะทำงานตำแหน่งอะไร
+                เพราะอะไร
+                <p>A. Developer (ผู้พัฒนาเกม เขียนโปรแกรมเพื่อรันเกม)</p>
+                <p>B. Designer (ผู้ออกแบบเกม เช่นเกมต้องเป็นแบบไหนถึงจะสนุก)</p>
+                <p>C. Artist (ผู้สร้างผลงานอาร์ตให้เกม)</p>
+              </li>
+              <li className="pt-4 px-4">
+                น้อง ๆ คิดว่า ในการสร้างเกมขึ้นมา 1 เกม ต้องมีองค์ประกอบอะไรบ้าง
+                ลองอธิบายตามตามเข้าใจของตัวเอง
+              </li>
+              <li className="pt-4 px-4">
+                น้องคิดว่าเกมจะสนุกได้ ขึ้นอยู่กับอะไรบ้าง
+              </li>
+              <li className="pt-4 px-4">เล่าถึงเกมในฝันให้พี่ฟังหน่อย</li>
+              <li className="pt-4 px-4">
+                ลองอธิบาย game design ของเกมอะไรก็ได้มา 1 เกม อย่างละเอียด
+              </li>
+            </ul>
+            <div className="w-full h-[1px] bg-gray-200/50 rounded-full mt-12" />
+            <button
+              onClick={() => setToggleTOS(!toggleTOS)}
+              className="px-8 py-2 bg-[#DDEED9] text-lg font-medium rounded-full my-12"
+            >
+              สมัครค่าย Game Runner
+            </button>
           </div>
         </div>
         <div
@@ -428,7 +537,7 @@ const Modal = ({ setToggleModal, selectedCamp }) => {
             <div className="fixed z-[44] top-12 left-12 lg:left-32 right-12 lg:right-32 bottom-12 bg-white rounded-lg p-4 overflow-y-scroll no-scroll">
               <FiXCircle
                 onClick={() => setToggleTOS(false)}
-                className="text-gray-800 text-3xl ml-auto"
+                className="text-gray-800 text-3xl ml-auto cursor-pointer"
               />
               <div className="mx-2 md:mx-12 my-4">
                 <h3 className="text-center text-lg font-bold text-gray-800">
@@ -513,33 +622,68 @@ const Modal = ({ setToggleModal, selectedCamp }) => {
           </>
         )}
 
-        <div className="fixed z-[42] top-2 left-2 right-2 bottom-2 bg-[url('network.png')] rounded-lg p-4 overflow-y-scroll no-scroll">
+        <div className="fixed z-[42] top-2 left-2 right-2 bottom-2 bg-[url('network.png')] bg-no-repeat bg-cover rounded-lg p-4 overflow-y-scroll no-scroll">
           <FiXCircle
             onClick={closeModal}
-            className="text-white text-3xl ml-auto"
+            className="text-white text-3xl ml-auto cursor-pointer"
           />
           <div className="flex justify-center items-center flex-col lg:flex-row space-y-12 lg:space-y-0 lg:space-x-12 p-2 md:p-12 max-w-[100em] mx-auto mt-24">
             <img src="/camp-logo-4.png" alt="Webtopia Town" />
             <div>
               <p className="text-white text-3xl font-semibold  text-center">
-              Nettapunk Town
+                Nettapunk Town
               </p>
               <p className="text-white text-3xl font-semibold  text-center">
-              เมืองแห่งเครือข่ายอันกว้างใหญ่ 
+                เมืองแห่งเครือข่ายอันกว้างใหญ่
               </p>
               <p className="indent-10 p-4 md:p-12 bg-[#221010]/40 rounded text-white text-lg font-medium max-w-[40em] mt-8">
-              ผู้รอดชีวิตในเมืองแห่งนี้ต่างมีแนวคิดที่จะสื่อสารไปหาเมืองอื่น ๆ ที่เหลือรอดด้วยศาสตร์แห่งเครือข่าย
-และวิทยาการอันทรงพลังของเมืองอย่าง Packet Tracer ที่ท่านจะสามารถศึกษาการเดินทางของข้อมูล
-ตั้งแต่ต้นทางจนถึงปลายทางได้ โดยทุกท่านที่เป็นส่วนหนึ่งของเมืองจะได้เรียนรู้ศาสตร์แห่ง Network ตั้งแต่เริ่มต้น และได้ใช้อุปกรณ์ลับของเมืองอย่าง Rack กันจริง ๆ อีกด้วย หากท่านมีความสนใจในศาสตร์
-แห่งการติดต่อสื่อสาร จงมาเข้าร่วมกับเมืองของเราและเชื่อมต่อเมืองทั้ง 4 เข้าด้วยกัน ด้วยพลังนี้กันเถอะ!
+                ผู้รอดชีวิตในเมืองแห่งนี้ต่างมีแนวคิดที่จะสื่อสารไปหาเมืองอื่น ๆ
+                ที่เหลือรอดด้วยศาสตร์แห่งเครือข่าย
+                และวิทยาการอันทรงพลังของเมืองอย่าง Packet Tracer
+                ที่ท่านจะสามารถศึกษาการเดินทางของข้อมูล
+                ตั้งแต่ต้นทางจนถึงปลายทางได้
+                โดยทุกท่านที่เป็นส่วนหนึ่งของเมืองจะได้เรียนรู้ศาสตร์แห่ง
+                Network ตั้งแต่เริ่มต้น และได้ใช้อุปกรณ์ลับของเมืองอย่าง Rack
+                กันจริง ๆ อีกด้วย หากท่านมีความสนใจในศาสตร์ แห่งการติดต่อสื่อสาร
+                จงมาเข้าร่วมกับเมืองของเราและเชื่อมต่อเมืองทั้ง 4 เข้าด้วยกัน
+                ด้วยพลังนี้กันเถอะ!
               </p>
-              <button
-                onClick={() => setToggleTOS(!toggleTOS)}
-                className="px-8 py-2 bg-[#B0C2FF] text-lg font-medium rounded-full ml-auto block mt-4"
-              >
-                สมัครค่าย NETTAPUNK
-              </button>
             </div>
+          </div>
+          <div className="mt-12 flex flex-col items-center px-8">
+            <div className="w-full h-[1px] bg-gray-200/50 rounded-full" />
+            <h3 className="text-white font-semibold text-3xl mt-12 underline decoration-4 underline-offset-8">
+              คำถามประจำค่าย
+            </h3>
+            <ul className="text-white mt-12 flex flex-col space-y-12 max-w-[60em] list-decimal divide-y divide-gray-200/40">
+              <li className="pt-4 px-4">
+                น้อง ๆ คิดว่าคอมพิวเตอร์ 2
+                เครื่องสามารถติดต่อสื่อสารกันได้อย่างไร
+              </li>
+              <li className="pt-4 px-4">
+                Network ในความคิดของน้อง ๆ คืออะไรและมีความสำคัญอย่างไร
+              </li>
+              <li className="pt-4 px-4">
+                อยากให้น้อง ๆ ยกตัวอย่างอุปกรณ์ที่เกี่ยวกับ Network ที่อยู่รอบ ๆ
+                ตัวของน้องพร้อมอธิบายให้พวกพี่ฟังหน่อยว่าทำไมถึงเลือกอุปกรณ์นี้มาและมันทำอะไรได้บ้าง
+              </li>
+              <li className="pt-4 px-4">
+                หากน้องเปรียบเทียบ Network เป็นอะไรก็ได้ 1 อย่าง
+                น้องๆจะเปรียบเทียบกับอะไร และเพราะอะไร
+              </li>
+              <li className="pt-4 px-4">
+                น้อง ๆ คิดว่า Internet Protocol หรือที่เรียกย่อ ๆ ว่า IP คืออะไร
+                และความแตกต่างระหว่าง IPv4 และ IPv6 มีความแตกต่างกันอย่างไร
+                และทำไมถึงต้องมี IPv6
+              </li>
+            </ul>
+            <div className="w-full h-[1px] bg-gray-200/50 rounded-full mt-12" />
+            <button
+              onClick={() => setToggleTOS(!toggleTOS)}
+              className="px-8 py-2 bg-[#B0C2FF] text-lg font-medium rounded-full my-12"
+            >
+              สมัครค่าย Nettapunk
+            </button>
           </div>
         </div>
         <div
@@ -553,10 +697,8 @@ const Modal = ({ setToggleModal, selectedCamp }) => {
 
   return ReactDOM.createPortal(
     <>
-
       <div className="fixed z-[42] top-12 left-24 right-24 bottom-12 bg-white rounded-lg p-4">
         <p>Loading..</p>
-
       </div>
       <div
         onClick={closeModal}

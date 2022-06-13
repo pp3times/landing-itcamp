@@ -56,7 +56,7 @@ const playGsap = () => {
                 markers: false,
                 start: "top bottom",
                 end: "top bottom",
-                scrub: 2
+                toggleActions:"play none none none"
             },
             opacity: 0,
             yPercent: 100
