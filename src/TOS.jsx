@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 const TOS = () => {
+	window.scrollTo(0, 0);
   return (
     <div className="bg-gradient-to-b from-[#1D1D2F] via-[#30307D] to-[#6329C1] min-h-[125vh] py-12 px-4 sm:px-12">
       <div className="sticky top-8 left-0">

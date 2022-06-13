@@ -7,6 +7,7 @@
   * {
     @apply font-anuphan;
 		scroll-behavior: smooth;
+		user-select: text;
   }
 }
 
