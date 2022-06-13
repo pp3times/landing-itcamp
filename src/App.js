@@ -9,6 +9,7 @@ import {
   SwiperSection,
 } from "./layouts";
 import gsapPlayer from "./functions/gsapPlayer";
+import { Link } from "react-router-dom"
 
 const App = () => {
   //Use animation
@@ -18,9 +19,6 @@ const App = () => {
       console.log = function () { }
     }
   }, []);
-
-
-
 
   return (
     <div className="bg-[#1D1D2F]">
@@ -187,6 +185,10 @@ const App = () => {
           เลขที่ 1 ซอยฉลองกรุง 1 แขวงลาดกระบัง เขตลาดกระบัง กรุงเทพฯ 10520
           <p>ติดต่อ +66 (0) 2723 4900 หรือ +66 (0) 2723 4910</p>
         </h2>
+        <div className="flex justify-center space-x-4">
+          <Link to="/tos" className="text-white underline text-center">Term of service</Link>
+          <Link to="/privacy" className="text-white underline text-center">Privacy policy</Link>
+        </div>
       </div>
     </div>
   );

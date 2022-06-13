@@ -50,14 +50,14 @@ const SwiperSection = () => {
         </SwiperSlide>
         <SwiperSlide className="w-full  bg-red-100/50 rounded-lg p-1.5">
           <img
-            src="feeling/_MG_9426.JPG"
+            src="feeling/_MG_9426.jpg"
             alt="ITCamp_img3"
             className="w-full h-full block"
           />
         </SwiperSlide>
         <SwiperSlide className="w-full  bg-red-100/50 rounded-lg p-1.5">
           <img
-            src="feeling/IMG_6202.JPG"
+            src="feeling/IMG_6202.jpg"
             alt="ITCamp_img4"
             className="w-full h-full block"
           />

@@ -91,6 +91,7 @@ const Modal = ({ setToggleModal, selectedCamp }) => {
                 <button
                   className={`disabled:bg-gray-300 bg-gray-500 text-white w-full py-3 text-lg font-semibold rounded-md mt-4 transition-all duration-100`}
                   disabled={!accept}
+                  onClick={()=> window.location.replace("https://register.itcamp18.in.th/")}
                 >
                   ยืนยัน
                 </button>
@@ -157,7 +158,7 @@ const Modal = ({ setToggleModal, selectedCamp }) => {
                   และแนบ URL มาได้
                 </p>
                 <img
-                  src="/camp-question/web-1.png"
+                  src="/camp-question/web1.png"
                   alt="web-1"
                   className="w-full max-w-[30em] mt-4 rounded"
                 />
@@ -276,6 +277,7 @@ const Modal = ({ setToggleModal, selectedCamp }) => {
                 <button
                   className={`disabled:bg-gray-300 bg-gray-500 text-white w-full py-3 text-lg font-semibold rounded-md mt-4 transition-all duration-100`}
                   disabled={!accept}
+                  onClick={()=> window.location.replace("https://register.itcamp18.in.th/")}
                 >
                   ยืนยัน
                 </button>
@@ -343,7 +345,7 @@ const Modal = ({ setToggleModal, selectedCamp }) => {
                 จากข้อมูลต่อไปนี้ น้องเห็นอะไรจากข้อมูลนี้บ้าง
                 ลองอธิบายให้พี่ฟังหน่อย
                 <img
-                  src="/camp-question/data-1.png"
+                  src="/camp-question/data1.png"
                   alt="data-1"
                   className="w-full max-w-[30em] mt-4 rounded"
                 />
@@ -448,6 +450,7 @@ const Modal = ({ setToggleModal, selectedCamp }) => {
                 <button
                   className={`disabled:bg-gray-300 bg-gray-500 text-white w-full py-3 text-lg font-semibold rounded-md mt-4 transition-all duration-100`}
                   disabled={!accept}
+                  onClick={()=> window.location.replace("https://register.itcamp18.in.th/")}
                 >
                   ยืนยัน
                 </button>
@@ -610,6 +613,7 @@ const Modal = ({ setToggleModal, selectedCamp }) => {
                 <button
                   className={`disabled:bg-gray-300 bg-gray-500 text-white w-full py-3 text-lg font-semibold rounded-md mt-4 transition-all duration-100`}
                   disabled={!accept}
+                  onClick={()=> window.location.replace("https://register.itcamp18.in.th/")}
                 >
                   ยืนยัน
                 </button>
