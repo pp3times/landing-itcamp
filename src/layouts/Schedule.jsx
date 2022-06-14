@@ -20,7 +20,7 @@ const Schedule = () => {
             </h3>
           </div>
           <div className="w-full flex items-center px-12 text-[#A1BBE0] font-semibold text-xl">
-            <p className="text-sm md:text-base">10 มิถุนายน - 21 มิถุนายน</p>
+            <p className="text-sm md:text-base">13 มิถุนายน - 25 มิถุนายน</p>
           </div>
         </div>
         <div className="flex border-2 border-[#F5B2B2] w-full max-w-[50em] divide-x-2 divide-dotted p-4 rounded-3xl">

@@ -91,7 +91,9 @@ const Modal = ({ setToggleModal, selectedCamp }) => {
                 <button
                   className={`disabled:bg-gray-300 bg-gray-500 text-white w-full py-3 text-lg font-semibold rounded-md mt-4 transition-all duration-100`}
                   disabled={!accept}
-                  onClick={()=> window.location.replace("https://register.itcamp18.in.th/")}
+                  onClick={() =>
+                    window.location.replace("https://register.itcamp18.in.th/")
+                  }
                 >
                   ยืนยัน
                 </button>
@@ -167,7 +169,7 @@ const Modal = ({ setToggleModal, selectedCamp }) => {
                 จงเขียน function getSum ที่จะรับ array [“h3llo”, “w0rld”,
                 “th1s”, “is”, “w3bt0pi4”] เข้ามาและ return
                 ผลรวมของเลขโดดทั้งหมดที่แทรกอยู่ภายในคำแต่ละคำ เช่น “m0rn1n9”
-                จะต้องเป็น 0+1+9
+                จะต้องเป็น 0+1+9 (ใช้ภาษา JavaScript เท่านั้น)
               </li>
               <li className="pt-4 px-4">
                 ให้น้อง ๆ เขียนเว็บไซต์เพื่อแนะนำตัว โดยจะมีเนื้อหาอย่างไรก็ได้
@@ -277,7 +279,9 @@ const Modal = ({ setToggleModal, selectedCamp }) => {
                 <button
                   className={`disabled:bg-gray-300 bg-gray-500 text-white w-full py-3 text-lg font-semibold rounded-md mt-4 transition-all duration-100`}
                   disabled={!accept}
-                  onClick={()=> window.location.replace("https://register.itcamp18.in.th/")}
+                  onClick={() =>
+                    window.location.replace("https://register.itcamp18.in.th/")
+                  }
                 >
                   ยืนยัน
                 </button>
@@ -450,7 +454,9 @@ const Modal = ({ setToggleModal, selectedCamp }) => {
                 <button
                   className={`disabled:bg-gray-300 bg-gray-500 text-white w-full py-3 text-lg font-semibold rounded-md mt-4 transition-all duration-100`}
                   disabled={!accept}
-                  onClick={()=> window.location.replace("https://register.itcamp18.in.th/")}
+                  onClick={() =>
+                    window.location.replace("https://register.itcamp18.in.th/")
+                  }
                 >
                   ยืนยัน
                 </button>
@@ -613,7 +619,9 @@ const Modal = ({ setToggleModal, selectedCamp }) => {
                 <button
                   className={`disabled:bg-gray-300 bg-gray-500 text-white w-full py-3 text-lg font-semibold rounded-md mt-4 transition-all duration-100`}
                   disabled={!accept}
-                  onClick={()=> window.location.replace("https://register.itcamp18.in.th/")}
+                  onClick={() =>
+                    window.location.replace("https://register.itcamp18.in.th/")
+                  }
                 >
                   ยืนยัน
                 </button>

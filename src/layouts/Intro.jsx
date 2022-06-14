@@ -22,9 +22,14 @@ const Intro = () => {
           คณะเทคโนโลยีสารสนเทศ <br />
           สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง{" "}
         </p>
-        <button className="intro-header px-10 py-3 bg-transparent border-2 border-white text-2xl font-semibold text-white mt-10">
+        <a
+          href="https://register.itcamp18.in.th"
+          target="_blank"
+          rel="noreferrer"
+          className="intro-header px-10 py-3 bg-transparent border-2 border-white text-2xl font-semibold text-white mt-10"
+        >
           สมัครเข้าค่าย
-        </button>
+        </a>
       </div>
     </div>
   );
