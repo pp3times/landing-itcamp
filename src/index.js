@@ -12,9 +12,9 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} />
-      <Route path="/tos" element={<TOS />} />
-      <Route path="/privacy" element={<PrivacyPolicy />} />
-      <Route path="/cookie" element={<Cookie />} />
+      <Route path="tos" element={<TOS />} />
+      <Route path="privacy" element={<PrivacyPolicy />} />
+      <Route path="cookie" element={<Cookie />} />
       <Route
         path="*"
         element={
