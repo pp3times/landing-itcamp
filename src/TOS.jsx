@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 const TOS = () => {
-	window.scrollTo(0, 0);
+  window.scrollTo(0, 0);
   return (
     <div className="bg-gradient-to-b from-[#1D1D2F] via-[#30307D] to-[#6329C1] min-h-[125vh] py-12 px-4 sm:px-12">
       <div className="sticky top-8 left-0">
@@ -18,8 +18,7 @@ const TOS = () => {
         </h2>
         <ul className="list-decimal sm:text-lg text-white/80 pl-6 mt-12 leading-8 divide-y divide-gray-100/20">
           <li className="py-2">
-            ผู้สมัครต้องเป็นนักเรียนระดับมัธยมศึกษาตอนปลาย ปวช. ปวส.
-            หรือเทียบเท่า เท่านั้น
+            ผู้สมัครต้องเป็นนักเรียนระดับมัธยมศึกษาตอนปลาย ปวช. เท่านั้น
           </li>
           <li className="py-2">
             ผู้สมัครสามารถเข้าร่วมการอบรมได้ตลอดระยะเวลา 4 วัน 3 คืน
@@ -59,8 +58,7 @@ const TOS = () => {
 
         <ul className="list-decimal sm:text-lg text-white/80 pl-6 mt-12 leading-8 divide-y divide-gray-100/20">
           <li className="py-2">
-            ผู้สมัครต้องเป็นนักเรียนระดับมัธยมศึกษาตอนปลาย ปวช. ปวส.
-            หรือเทียบเท่า เท่านั้น
+            ผู้สมัครต้องเป็นนักเรียนระดับมัธยมศึกษาตอนปลาย ปวช. เท่านั้น
           </li>
           <li className="py-2">
             <p>ค่ายที่รับสมัครมีทั้งหมด 4 ค่าย ได้แก่</p>
@@ -117,7 +115,7 @@ const TOS = () => {
           </li>
           <li className="py-2">
             ผู้จัดงานขอสงวนสิทธิ์ในการเปลี่ยนแปลง
-            แก้ไขรายละเอียดกิจกรรมในครั้งนี้ และ/หรือข้อกำหนดและเงื่อนไขต่าง ๆ
+            แก้ไขรายละเอียดกิจกรรมในครั้งนี้ หรือข้อกำหนดและเงื่อนไขต่าง ๆ
             ที่เกี่ยวข้องตามดุลพินิจของผู้จัดงาน โดยไม่ต้องแจ้งให้ทราบล่วงหน้า
           </li>
         </ul>

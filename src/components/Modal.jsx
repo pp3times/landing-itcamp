@@ -135,7 +135,7 @@ const Modal = ({ setToggleModal, selectedCamp }) => {
               </p>
             </div>
           </div>
-          <div className="mt-12 flex flex-col items-center px-8">
+          {/* <div className="mt-12 flex flex-col items-center px-8">
             <div className="w-full h-[1px] bg-gray-200/50 rounded-full" />
             <h3 className="text-white font-semibold text-3xl mt-12 underline decoration-4 underline-offset-8">
               คำถามประจำค่าย
@@ -181,13 +181,7 @@ const Modal = ({ setToggleModal, selectedCamp }) => {
               </li>
             </ul>
             <div className="w-full h-[1px] bg-gray-200/50 rounded-full mt-12" />
-            <button
-              onClick={() => setToggleTOS(!toggleTOS)}
-              className="px-8 py-2 bg-red-200 text-lg font-medium rounded-full my-12"
-            >
-              สมัครค่าย Webtopia
-            </button>
-          </div>
+          </div> */}
         </div>
         <div
           onClick={closeModal}
@@ -322,7 +316,7 @@ const Modal = ({ setToggleModal, selectedCamp }) => {
               </p>
             </div>
           </div>
-          <div className="mt-12 flex flex-col items-center px-8">
+          {/* <div className="mt-12 flex flex-col items-center px-8">
             <div className="w-full h-[1px] bg-gray-200/50 rounded-full" />
             <h3 className="text-white font-semibold text-3xl mt-12 underline decoration-4 underline-offset-8">
               คำถามประจำค่าย
@@ -356,13 +350,7 @@ const Modal = ({ setToggleModal, selectedCamp }) => {
               </li>
             </ul>
             <div className="w-full h-[1px] bg-gray-200/50 rounded-full mt-12" />
-            <button
-              onClick={() => setToggleTOS(!toggleTOS)}
-              className="px-8 py-2 bg-[#E7D3A3] text-lg font-medium rounded-full my-12"
-            >
-              สมัครค่าย DATAVERGENT
-            </button>
-          </div>
+          </div> */}
         </div>
         <div
           onClick={closeModal}
@@ -495,7 +483,7 @@ const Modal = ({ setToggleModal, selectedCamp }) => {
               </p>
             </div>
           </div>
-          <div className="mt-12 flex flex-col items-center px-8">
+          {/* <div className="mt-12 flex flex-col items-center px-8">
             <div className="w-full h-[1px] bg-gray-200/50 rounded-full" />
             <h3 className="text-white font-semibold text-3xl mt-12 underline decoration-4 underline-offset-8">
               คำถามประจำค่าย
@@ -521,13 +509,7 @@ const Modal = ({ setToggleModal, selectedCamp }) => {
               </li>
             </ul>
             <div className="w-full h-[1px] bg-gray-200/50 rounded-full mt-12" />
-            <button
-              onClick={() => setToggleTOS(!toggleTOS)}
-              className="px-8 py-2 bg-[#DDEED9] text-lg font-medium rounded-full my-12"
-            >
-              สมัครค่าย Game Runner
-            </button>
-          </div>
+          </div> */}
         </div>
         <div
           onClick={closeModal}
@@ -662,7 +644,7 @@ const Modal = ({ setToggleModal, selectedCamp }) => {
               </p>
             </div>
           </div>
-          <div className="mt-12 flex flex-col items-center px-8">
+          {/* <div className="mt-12 flex flex-col items-center px-8">
             <div className="w-full h-[1px] bg-gray-200/50 rounded-full" />
             <h3 className="text-white font-semibold text-3xl mt-12 underline decoration-4 underline-offset-8">
               คำถามประจำค่าย
@@ -690,13 +672,7 @@ const Modal = ({ setToggleModal, selectedCamp }) => {
               </li>
             </ul>
             <div className="w-full h-[1px] bg-gray-200/50 rounded-full mt-12" />
-            <button
-              onClick={() => setToggleTOS(!toggleTOS)}
-              className="px-8 py-2 bg-[#B0C2FF] text-lg font-medium rounded-full my-12"
-            >
-              สมัครค่าย Nettapunk
-            </button>
-          </div>
+          </div> */}
         </div>
         <div
           onClick={closeModal}
