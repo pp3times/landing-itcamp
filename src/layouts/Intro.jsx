@@ -26,7 +26,7 @@ const Intro = () => {
           href="https://register.itcamp18.in.th"
           target="_blank"
           rel="noreferrer"
-          className="intro-header relative px-14 py-5 hover:scale-105 transition-all ease-in-out duration-200 bg-transparent border-2 border-white text-2xl font-semibold text-white mt-10"
+          className="hidden intro-header relative px-14 py-5 hover:scale-105 transition-all ease-in-out duration-200 bg-transparent border-2 border-white text-2xl font-semibold text-white mt-10"
         >
           ประกาศผลรับสมัคร
         </a>
